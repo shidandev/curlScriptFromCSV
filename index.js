@@ -23,7 +23,7 @@ fs.createReadStream("starterpack.csv") // <--- letak nama file csv, pastikan ade
 
 function batch(emel) {
 
-
+    // function call aync async, parallel call
     let myShellScript = exec('echo ' + emel); //<- esok tanya script ke firebase, replace dlam exec() ni
     myShellScript.stdout.on('data', (data) => {
         console.log('result', data);
